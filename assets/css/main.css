@@ -2,15 +2,16 @@
     margin: 0;
     padding: 0;
     block-size: border-box;
-    font-family: Lato;
 }
 
 li {
     list-style: none;
+    font-family: Lato;
 }
 
 a {
     text-decoration: none;
+    font-family: Lato;
 }
 
 /* Header */
@@ -52,12 +53,15 @@ a {
     padding: 13px 50px;
     border-radius: 4px;
     border: none;
+    font-family: Lato;
 }
 
 .btn_white {
     color: #000;
     background-color: #fff;
 }
+
+/* Main */
 
 .main {
     background: url('../img/BG.png') no-repeat center center / cover;
@@ -77,12 +81,23 @@ a {
     font-size: 65px;
     font-weight: 900;
     margin-bottom: 30px;
+    width: 440px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .main__text {
     color: #484848;
     font-weight: 500;
     margin-bottom: 55px;
+    width: 420px;
+    font-size: 20px;
+    font-family: Lato;
+}
+
+.main__btn {
+    width: 275px;
+    height: 65px;
+    font-size: 20px;
 }
 
 /* Steps */
@@ -91,25 +106,43 @@ a {
     padding: 169px 0 255px 0;
 }
 
-.steps_subtitle {
+.steps__subtitle {
     color: #424242;
     font-weight: 700;
     font-size: 24px;
+    font-family: Lato;
 }
 
 .steps__title {
     color: #01996D;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 50px;
-    max-width: 584px;
+    width: 584px;
+    height: 158px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .steps__text {
     color: #424242;
     font-size: 20px;
     font-weight: 500;
-    max-width: 670px;
     margin-bottom: 60px;
+    font-family: Lato;
+    max-width: 670px;
+}
+
+.steps__text_1 {
+    width: 382px;
+    height: 150px;
+}
+
+.steps__text_2 {
+    width: 392px;
+    height: 100px;
+}
+
+.steps__text_3 {
+    height: 100px;
 }
 
 .steps__block {
@@ -120,16 +153,37 @@ a {
 
 .steps__card-title {
     color: #000;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 30px;
     margin-bottom: 55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .steps__card {
-    max-width: 390px;
+    width: 390px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 95px;
+}
+
+.steps__card_1 {
+    width: 390px;
+    height: 802px;
+}
+
+.steps__card_2 {
+    width: 392px;
+    height: 807px;
+}
+
+.steps__card_3 {
+    width: 441px;
+    height: 802px;
+}
+
+.steps__card:first-child {
+    margin-left: 0;
 }
 
 .steps__row {
@@ -139,4 +193,135 @@ a {
 
 .steps__pic img{
     border-radius: 12px;
+    width: 390px;
+}
+
+.steps__pic_1 {
+    padding-right: 35px;
+}
+
+/* Success-story */
+
+.success-story {
+    height: 922px;
+    background-color: #245852;
+}
+
+.success-story__wrap {
+    display: flex;
+}
+
+.success-story__title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+    padding-top: 310px;
+    width: 580px;
+    height: 158px;
+}
+
+.success-story__text {
+    color: #fff;
+    font-size: 25px;
+    font-family: Lato;
+}
+
+.success-story__btn {
+    margin-top: 57px;
+    height: 65px;
+}
+
+.success-story__img {
+    width: 800px;
+    height: 516px;
+    margin-top: 255px;
+    padding-left: 31px;
+}
+
+/* Product */
+
+.product {
+    margin-top: 120px;
+}
+
+.product::before {
+    content: '';
+    width: 296.14px;
+    height: 293.9px;
+    background: url('../img/Card.png');
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 75px;
+}
+
+.product__wrap {
+    display: flex;
+}
+
+.product__img {
+    height: 575px;
+    margin-left: 100px;
+}
+
+.product__info {
+    margin-left: 80px;
+}
+
+.product__subtitle {
+    color: #424242;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: Lato;
+}
+
+.product__title {
+    color: #01996D;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    width: 584px;
+    height: 158px;
+    margin-top: 10px;
+}
+
+.product__text {
+    color: #484848;
+    font-size: 20px;
+    width: 530px;
+    height: 81px;
+    font-family: Lato;
+}
+
+.product__btn {
+    height: 65px;
+    margin-top: 40px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #245852;
+    margin-top: 242px;
+    height: 654px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding-top: 95px;
+    padding-left: 275px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    font-family: Lato;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer__name {
+    font-size: 40px;
+    font-family: ;
+    font-weight: 900;
 }
